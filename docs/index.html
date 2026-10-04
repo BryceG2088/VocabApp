@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#080829">
+<title>词汇</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="left">
+      <button id="deckBtn" class="icon" aria-label="Choose deck">
+        <svg width="46" height="38" viewBox="0 0 46 38"><rect x="12" y="8" width="28" height="26" rx="5" fill="#4cc9ff"/><rect x="0" y="0" width="28" height="26" rx="5" fill="#4254ff"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9l7 7 7-7"/></svg>
+      </button>
+    </div>
+    <div class="right">
+      <button id="gearBtn" class="icon" aria-label="Settings">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M12 2.5l1.7 2.3 2.8-.6 1 2.7 2.7 1-.6 2.8L21.5 12l-2.3 1.7.6 2.8-2.7 1-1 2.7-2.8-.6L12 21.5l-1.7-2.3-2.8.6-1-2.7-2.7-1 .6-2.8L2.5 12l2.3-1.7-.6-2.8 2.7-1 1-2.7 2.8.6z"/><circle cx="12" cy="12" r="3.2" fill="#080829"/></svg>
+      </button>
+      <button id="closeBtn" class="icon" aria-label="End session">
+        <svg width="30" height="30" viewBox="0 0 24 24" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="progress"><div id="bar"><span class="dot"></span></div></div>
+
+  <main>
+    <div id="card" class="card" role="button" tabindex="0">
+      <span id="pill" class="pill">New</span>
+      <button id="speak" class="speak" aria-label="Pronounce">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="#fff"><path d="M3 9.5v5h3.5L11 19V5L6.5 9.5z"/><path d="M14 8.5a5 5 0 010 7M16.5 6a8.5 8.5 0 010 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div id="face" class="face"></div>
+    </div>
+  </main>
+
+  <footer id="actions"></footer>
+</div>
+
+<div id="sheet" class="sheet hidden"><div class="panel" id="panel"></div></div>
+<script src="app.js"></script>
+</body>
+</html>
