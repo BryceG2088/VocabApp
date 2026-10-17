@@ -59,7 +59,9 @@
   const newToday = () => (db.daily.date === today() ? db.daily.n : 0);
   const bumpNew = () => { db.daily = { date: today(), n: newToday() + 1 }; };
   const card = (h) => db.cards[h] || fresh();
-  const pool = () => vocab.filter((v) => db.settings.guide === "all" || String(v.guide) === String(db.settings.guide));
+  const deckOf = (v) => v.deck || (v.guide != null ? "Study guide " + v.guide : "Other");
+  if (/^\d+$/.test(db.settings.guide)) db.settings.guide = "Study guide " + db.settings.guide; // older saved value
+  const pool = () => vocab.filter((v) => db.settings.guide === "all" || deckOf(v) === db.settings.guide);
 
   function counts(now = Date.now()) {
     let learn = 0, due = 0, fresh_ = 0;
@@ -175,10 +177,10 @@
   const closeSheet = () => $("sheet").classList.add("hidden");
 
   function deckSheet() {
-    const guides = [...new Set(vocab.map((v) => v.guide))].filter((g) => g != null).sort((a, b) => a - b);
-    const row = (val, name, n) => `<button class="opt ${String(db.settings.guide) === String(val) ? "sel" : ""}" data-g="${val}"><span>${name}<small>${n} terms</small></span></button>`;
-    openSheet(`<h2>Deck</h2>${row("all", "All study guides", vocab.length)}${guides.map((g) =>
-      row(g, "Study guide " + g, vocab.filter((v) => v.guide === g).length)).join("")}`, (p) =>
+    const decks = [...new Set(vocab.map(deckOf))];
+    const row = (val, name, n) => `<button class="opt ${db.settings.guide === val ? "sel" : ""}" data-g="${esc(val)}"><span>${esc(name)}<small>${n} terms</small></span></button>`;
+    openSheet(`<h2>Deck</h2>${row("all", "All terms", vocab.length)}${decks.map((d) =>
+      row(d, d, vocab.filter((v) => deckOf(v) === d).length)).join("")}`, (p) =>
       p.querySelectorAll(".opt").forEach((b) => (b.onclick = () => { db.settings.guide = b.dataset.g; save(); closeSheet(); startSession(); })));
   }
 

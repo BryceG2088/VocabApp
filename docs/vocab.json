@@ -1348,5 +1348,785 @@
 "pinyin": "chī kǔ",
 "english": "endure hardship",
 "guide": 6
+},
+{
+"hanzi": "狗不理包子",
+"pinyin": "gǒu bù lǐ bāo zi",
+"english": "Goubuli steamed buns (Tianjin classic)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "煎饼馃子",
+"pinyin": "jiān bǐng guǒ zi",
+"english": "jianbing with fried dough crisp",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "麻花",
+"pinyin": "má huā",
+"english": "fried dough twist (Tianjin snack)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "耳朵眼炸糕",
+"pinyin": "ěr duǒ yǎn zhá gāo",
+"english": "Erduoyan fried rice cakes",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "锅巴菜",
+"pinyin": "guō bā cài",
+"english": "guoba cai (savory breakfast soup)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "老豆腐",
+"pinyin": "lǎo dòu fǔ",
+"english": "laodoufu (savory tofu pudding)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "贴饽饽熬小鱼",
+"pinyin": "tiē bō bō áo xiǎo yú",
+"english": "pan-stuck cornbread with stewed fish",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "海河",
+"pinyin": "hǎi hé",
+"english": "Haihe River",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "小吃",
+"pinyin": "xiǎo chī",
+"english": "snack; street food",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "早点",
+"pinyin": "zǎo diǎn",
+"english": "breakfast",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "特色菜",
+"pinyin": "tè sè cài",
+"english": "specialty dish",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "饺子",
+"pinyin": "jiǎo zi",
+"english": "dumplings",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "包子",
+"pinyin": "bāo zi",
+"english": "steamed stuffed bun",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "面条",
+"pinyin": "miàn tiáo",
+"english": "noodles",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "米饭",
+"pinyin": "mǐ fàn",
+"english": "cooked rice",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "汤",
+"pinyin": "tāng",
+"english": "soup",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "豆浆",
+"pinyin": "dòu jiāng",
+"english": "soy milk",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "烤鸭",
+"pinyin": "kǎo yā",
+"english": "roast duck",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "火锅",
+"pinyin": "huǒ guō",
+"english": "hot pot",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "海鲜",
+"pinyin": "hǎi xiān",
+"english": "seafood",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "素菜",
+"pinyin": "sù cài",
+"english": "vegetarian dish",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "饮料",
+"pinyin": "yǐn liào",
+"english": "drink; beverage",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "啤酒",
+"pinyin": "pí jiǔ",
+"english": "beer",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "白开水",
+"pinyin": "bái kāi shuǐ",
+"english": "plain hot water",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "菜单",
+"pinyin": "cài dān",
+"english": "menu",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "服务员",
+"pinyin": "fú wù yuán",
+"english": "waiter; waitress",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "点菜",
+"pinyin": "diǎn cài",
+"english": "order food",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "推荐",
+"pinyin": "tuī jiàn",
+"english": "recommend",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "好吃",
+"pinyin": "hǎo chī",
+"english": "delicious",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "太辣了",
+"pinyin": "tài là le",
+"english": "too spicy",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "微辣",
+"pinyin": "wēi là",
+"english": "mildly spicy",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "不要香菜",
+"pinyin": "bú yào xiāng cài",
+"english": "no cilantro, please",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "少放盐",
+"pinyin": "shǎo fàng yán",
+"english": "go easy on the salt",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "我不吃肉",
+"pinyin": "wǒ bù chī ròu",
+"english": "I don't eat meat",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "我对花生过敏",
+"pinyin": "wǒ duì huā shēng guò mǐn",
+"english": "I'm allergic to peanuts",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "打包",
+"pinyin": "dǎ bāo",
+"english": "take away; pack to go",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "买单",
+"pinyin": "mǎi dān",
+"english": "pay the bill",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "请给我一双筷子",
+"pinyin": "qǐng gěi wǒ yī shuāng kuài zi",
+"english": "may I have a pair of chopsticks",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "够了",
+"pinyin": "gòu le",
+"english": "enough",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "再来一份",
+"pinyin": "zài lái yī fèn",
+"english": "one more portion",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "多少钱",
+"pinyin": "duō shǎo qián",
+"english": "how much is it",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "太贵了",
+"pinyin": "tài guì le",
+"english": "too expensive",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "能便宜点吗",
+"pinyin": "néng pián yi diǎn ma",
+"english": "can you lower the price?",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "发票",
+"pinyin": "fā piào",
+"english": "receipt; invoice",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "零钱",
+"pinyin": "líng qián",
+"english": "small change",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "现金",
+"pinyin": "xiàn jīn",
+"english": "cash",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "微信支付",
+"pinyin": "wēi xìn zhī fù",
+"english": "WeChat Pay",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "支付宝",
+"pinyin": "zhī fù bǎo",
+"english": "Alipay",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "扫码",
+"pinyin": "sǎo mǎ",
+"english": "scan a QR code",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "刷卡",
+"pinyin": "shuā kǎ",
+"english": "pay by card",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "地铁",
+"pinyin": "dì tiě",
+"english": "subway",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "地铁站",
+"pinyin": "dì tiě zhàn",
+"english": "subway station",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "几号线",
+"pinyin": "jǐ hào xiàn",
+"english": "which line number",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "换乘",
+"pinyin": "huàn chéng",
+"english": "transfer (lines)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "出口",
+"pinyin": "chū kǒu",
+"english": "exit",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "入口",
+"pinyin": "rù kǒu",
+"english": "entrance",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "站台",
+"pinyin": "zhàn tái",
+"english": "platform",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "安检",
+"pinyin": "ān jiǎn",
+"english": "security check",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "车票",
+"pinyin": "chē piào",
+"english": "ticket (bus/train)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "单程票",
+"pinyin": "dān chéng piào",
+"english": "one-way ticket",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "公交车",
+"pinyin": "gōng jiāo chē",
+"english": "city bus",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "公交站",
+"pinyin": "gōng jiāo zhàn",
+"english": "bus stop",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "出租车",
+"pinyin": "chū zū chē",
+"english": "taxi",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "打车",
+"pinyin": "dǎ chē",
+"english": "hail a taxi; ride-hail",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "滴滴",
+"pinyin": "dī dī",
+"english": "Didi (ride-hailing app)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "师傅",
+"pinyin": "shī fù",
+"english": "driver; master (polite address)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "导航",
+"pinyin": "dǎo háng",
+"english": "navigation; GPS",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "红绿灯",
+"pinyin": "hóng lǜ dēng",
+"english": "traffic light",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "左拐",
+"pinyin": "zuǒ guǎi",
+"english": "turn left",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "右拐",
+"pinyin": "yòu guǎi",
+"english": "turn right",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "直走",
+"pinyin": "zhí zǒu",
+"english": "go straight",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "前面",
+"pinyin": "qián miàn",
+"english": "ahead; in front",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "对面",
+"pinyin": "duì miàn",
+"english": "opposite side",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "路口",
+"pinyin": "lù kǒu",
+"english": "intersection",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "火车站",
+"pinyin": "huǒ chē zhàn",
+"english": "train station",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "天津站",
+"pinyin": "tiān jīn zhàn",
+"english": "Tianjin Station",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "天津西站",
+"pinyin": "tiān jīn xī zhàn",
+"english": "Tianjin West Station",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "滨海国际机场",
+"pinyin": "bīn hǎi guó jì jī chǎng",
+"english": "Binhai International Airport",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "高铁",
+"pinyin": "gāo tiě",
+"english": "high-speed rail",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "城际列车",
+"pinyin": "chéng jì liè chē",
+"english": "intercity train",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "二等座",
+"pinyin": "èr děng zuò",
+"english": "second-class seat",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "候车室",
+"pinyin": "hòu chē shì",
+"english": "waiting hall",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "检票口",
+"pinyin": "jiǎn piào kǒu",
+"english": "ticket gate",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "晚点",
+"pinyin": "wǎn diǎn",
+"english": "delayed (train/flight)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "航班",
+"pinyin": "háng bān",
+"english": "flight",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "行李",
+"pinyin": "xíng lǐ",
+"english": "luggage",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "护照",
+"pinyin": "hù zhào",
+"english": "passport",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "身份证",
+"pinyin": "shēn fèn zhèng",
+"english": "ID card",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "共享单车",
+"pinyin": "gòng xiǎng dān chē",
+"english": "shared bike",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "请问",
+"pinyin": "qǐng wèn",
+"english": "excuse me; may I ask",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "不好意思",
+"pinyin": "bù hǎo yì sī",
+"english": "sorry; excuse me",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "谢谢",
+"pinyin": "xiè xiè",
+"english": "thank you",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "不客气",
+"pinyin": "bú kè qì",
+"english": "you're welcome",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "没关系",
+"pinyin": "méi guān xì",
+"english": "no problem",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "麻烦您",
+"pinyin": "má fán nín",
+"english": "sorry to trouble you",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "你好",
+"pinyin": "nǐ hǎo",
+"english": "hello",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "再见",
+"pinyin": "zài jiàn",
+"english": "goodbye",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "我是游客",
+"pinyin": "wǒ shì yóu kè",
+"english": "I'm a tourist",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "我是美国人",
+"pinyin": "wǒ shì měi guó rén",
+"english": "I'm American",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "我不会说中文",
+"pinyin": "wǒ bú huì shuō zhōng wén",
+"english": "I can't speak Chinese",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "我听不懂",
+"pinyin": "wǒ tīng bù dǒng",
+"english": "I don't understand (by hearing)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "请再说一遍",
+"pinyin": "qǐng zài shuō yī biàn",
+"english": "please say it again",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "请说慢一点",
+"pinyin": "qǐng shuō màn yì diǎn",
+"english": "please speak more slowly",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "这个怎么说",
+"pinyin": "zhè ge zěn me shuō",
+"english": "how do you say this?",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "你会说英语吗",
+"pinyin": "nǐ huì shuō yīng yǔ ma",
+"english": "do you speak English?",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "我想去…",
+"pinyin": "wǒ xiǎng qù …",
+"english": "I'd like to go to…",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "在哪儿",
+"pinyin": "zài nǎ ér",
+"english": "where is it",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "厕所",
+"pinyin": "cè suǒ",
+"english": "restroom",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "远不远",
+"pinyin": "yuǎn bù yuǎn",
+"english": "is it far?",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "走路要多久",
+"pinyin": "zǒu lù yào duō jiǔ",
+"english": "how long to walk",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "我迷路了",
+"pinyin": "wǒ mí lù le",
+"english": "I'm lost",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "酒店",
+"pinyin": "jiǔ diàn",
+"english": "hotel",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "预订",
+"pinyin": "yù dìng",
+"english": "reserve; booking",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "房间",
+"pinyin": "fáng jiān",
+"english": "room",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "退房",
+"pinyin": "tuì fáng",
+"english": "check out",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "充电宝",
+"pinyin": "chōng diàn bǎo",
+"english": "power bank",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "无线网",
+"pinyin": "wú xiàn wǎng",
+"english": "Wi-Fi",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "密码",
+"pinyin": "mì mǎ",
+"english": "password",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "景点",
+"pinyin": "jǐng diǎn",
+"english": "scenic spot",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "门票",
+"pinyin": "mén piào",
+"english": "admission ticket",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "拍照",
+"pinyin": "pāi zhào",
+"english": "take photos",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "可以帮我拍张照吗",
+"pinyin": "kě yǐ bāng wǒ pāi zhāng zhào ma",
+"english": "could you take a photo of me?",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "天津话",
+"pinyin": "tiān jīn huà",
+"english": "Tianjin dialect",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "嘛",
+"pinyin": "ma",
+"english": "what (Tianjin dialect)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "哏儿",
+"pinyin": "gén ér",
+"english": "funny; amusing (Tianjin dialect)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "倍儿",
+"pinyin": "bèi ér",
+"english": "very; super (Tianjin dialect)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "介",
+"pinyin": "jiè",
+"english": "this (Tianjin dialect)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "您吶",
+"pinyin": "nín nà",
+"english": "polite 'you' (Tianjin flavor)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "哏都",
+"pinyin": "gén dōu",
+"english": "'funny capital' (nickname for Tianjin)",
+"deck": "Tianjin Trip"
+},
+{
+"hanzi": "相声",
+"pinyin": "xiàng shēng",
+"english": "crosstalk comedy (Tianjin favorite)",
+"deck": "Tianjin Trip"
 }
 ]
