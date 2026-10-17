@@ -2,6 +2,7 @@
 
   python tools/vocab_tool.py build                 # rebuild corpus from every PDF in StudyGuides/
   python tools/vocab_tool.py add path/to/guide.pdf # add one new study guide to the corpus
+  python tools/vocab_tool.py curated [file.json]   # add hand-curated sets from data/curated/
 
 Pinyin comes from pypinyin. English comes from data/translations.json; any term not
 in there is machine-translated (Google via deep-translator, no key needed), shortened,
@@ -12,6 +13,7 @@ import json
 import os
 import re
 import sys
+import time
 
 from pypinyin import Style, pinyin
 
@@ -59,10 +61,17 @@ def shorten(text: str, limit: int = 40) -> str:
     return out or text[:limit]
 
 
-def machine_translate(term: str) -> str:
+def machine_translate(term: str, tries: int = 6) -> str:
     from deep_translator import GoogleTranslator
     clean = re.sub(r"[()（）+]", " ", term)
-    return shorten(GoogleTranslator(source="zh-CN", target="en").translate(clean).lower())
+    for i in range(tries):
+        try:
+            out = GoogleTranslator(source="zh-CN", target="en").translate(clean)
+            return shorten(out.lower())
+        except Exception:
+            if i == tries - 1:
+                raise
+            time.sleep(2 * 2 ** i)  # back off: Google rate-limits free requests
 
 
 def load_json(path, default):
@@ -73,15 +82,17 @@ def ensure_translations(terms):
     trans = load_json(TRANS, {})
     new = []
     for t in terms:
-        if t not in trans:
-            try:
-                trans[t] = machine_translate(t)
-            except Exception as e:  # offline etc.
-                print(f"  ! could not translate {t}: {e}")
-                trans[t] = ""
+        if trans.get(t):  # blank entries from earlier failures are retried
+            continue
+        try:
+            trans[t] = machine_translate(t)
             new.append(t)
+            time.sleep(0.5)
+        except Exception as e:
+            print(f"  ! could not translate {t}: {e}")
+            trans.pop(t, None)
+    json.dump(trans, open(TRANS, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     if new:
-        json.dump(trans, open(TRANS, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
         with open(REVIEW, "a", encoding="utf-8") as f:
             f.writelines(f"{t}\t{trans[t]}\n" for t in new)
         print(f"  {len(new)} machine-translated terms appended to data/needs_review.txt")
@@ -101,7 +112,7 @@ def merge(paths):
         trans = ensure_translations(terms)
         added = 0
         for t in terms:
-            if t in have:
+            if t in have or not trans.get(t):
                 continue
             have.add(t)
             corpus.append({"hanzi": t, "pinyin": to_pinyin(t), "english": trans[t],
@@ -113,12 +124,38 @@ def merge(paths):
     print(f"corpus size: {len(corpus)} -> docs/vocab.json")
 
 
+def merge_curated(paths):
+    """Hand-curated sets: {"deck": name, "terms": [[hanzi, english], ...]} (pinyin is generated)."""
+    corpus = load_json(OUT, [])
+    have = {c["hanzi"] for c in corpus}
+    for path in paths:
+        data = load_json(path, {})
+        added = 0
+        for hanzi, english in data["terms"]:
+            if hanzi in have:
+                print(f"  skip duplicate: {hanzi}")
+                continue
+            have.add(hanzi)
+            corpus.append({"hanzi": hanzi, "pinyin": to_pinyin(hanzi), "english": english,
+                           "deck": data["deck"]})
+            added += 1
+        print(f"{os.path.basename(path)}: {len(data['terms'])} terms, {added} new")
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    json.dump(corpus, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    print(f"corpus size: {len(corpus)} -> docs/vocab.json")
+
+
+CURATED = sorted(glob.glob(os.path.join(ROOT, "data", "curated", "*.json")))
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "build":
         if os.path.exists(OUT):
             os.remove(OUT)
         merge(sorted(glob.glob(os.path.join(GUIDES, "*.pdf"))))
+        merge_curated(CURATED)
+    elif cmd == "curated":
+        merge_curated(sys.argv[2:] or CURATED)
     elif cmd == "add" and len(sys.argv) > 2:
         merge(sys.argv[2:])
     else:
